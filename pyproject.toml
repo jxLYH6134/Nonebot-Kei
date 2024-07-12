@@ -9,6 +9,11 @@ requires-python = ">=3.9, <4.0"
 adapters = [
     { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" }
 ]
-plugins = []
+plugins = [
+    "nonebot_plugin_analysis_bilibili",
+    "nonebot_plugin_emojimix",
+    "nonebot_plugin_who_at_me",
+    "nonebot_plugin_withdraw",
+]
 plugin_dirs = ["src/plugins"]
 builtin_plugins = ["echo"]
