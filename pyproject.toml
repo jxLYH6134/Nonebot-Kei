@@ -13,6 +13,7 @@ adapters = [
 plugins = [
     "nonebot_plugin_analysis_bilibili",
     "nonebot_plugin_emojimix",
+    "nonebot_plugin_learning_chat",
     "nonebot_plugin_memes",
     "nonebot_plugin_multincm",
     "nonebot_plugin_who_at_me",
