@@ -24,10 +24,12 @@ pip install --upgrade tortoise-orm
 pip install --upgrade aiocache
 pip install --upgrade aiosqlite
 pip install --upgrade black
+pip install --upgrade expandvars
 pip install --upgrade iso8601
-pip install --upgrade numpy
+pip install --upgrade starlette
 
+pip install "numpy<2.0.0"
 pip install "pydantic<2.0.0"
 pip install "ruamel.yaml<0.18.0"
-pip list --outdated
+pip list --outdated --trusted-host mirrors.cloud.aliyuncs.com
 pause
