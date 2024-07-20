@@ -1,5 +1,6 @@
 @ECHO OFF
 pip install --upgrade nonebot2[fastapi]
+pip install --upgrade nonebot2[httpx]
 pip install --upgrade nonebot-adapter-onebot
 
 pip install --upgrade nonebot-plugin-analysis-bilibili
