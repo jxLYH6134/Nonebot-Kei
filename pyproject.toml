@@ -1,6 +1,6 @@
 [project]
 name = "Kei"
-version = "0.1.0"
+version = "1.2.0"
 description = "Kei"
 readme = "README.md"
 requires-python = ">=3.9, <4.0"
@@ -11,12 +11,16 @@ adapters = [
 #    {name = "Kritor", module_name = "nonebot.adapters.kritor"}
 ]
 plugins = [
+    "nonebot_plugin_alias",
     "nonebot_plugin_analysis_bilibili",
+    "nonebot_plugin_blacklist",
     "nonebot_plugin_emojimix",
+    "nonebot_plugin_fakemsg",
     "nonebot_plugin_fishing",
     "nonebot_plugin_learning_chat",
     "nonebot_plugin_memes",
     "nonebot_plugin_multincm",
+    "nonebot_plugin_questionmark",
     "nonebot_plugin_treehelp",
     "nonebot_plugin_who_at_me",
     "nonebot_plugin_withdraw",
