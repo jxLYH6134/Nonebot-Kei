@@ -17,19 +17,19 @@ class ResourceError(Exception):
 
 
 async def download_url(url: str) -> Optional[Dict[str, Any]]:
-    async with httpx.AsyncClient() as client:
-        for i in range(3):
-            try:
-                resp = await client.get(url, timeout=20)
-                if resp.status_code != 200:
-                    continue
-
-                return resp.json()
-
-            except Exception:
-                logger.warning(f"Error occurred when downloading {url}, retry: {i+1}/3")
-
-    logger.warning("Abort downloading")
+    # async with httpx.AsyncClient() as client:
+    #     for i in range(3):
+    #         try:
+    #             resp = await client.get(url, timeout=20)
+    #             if resp.status_code != 200:
+    #                 continue
+    #
+    #             return resp.json()
+    #
+    #         except Exception:
+    #             logger.warning(f"Error occurred when downloading {url}, retry: {i+1}/3")
+    #
+    # logger.warning("Abort downloading")
     return None
 
 
