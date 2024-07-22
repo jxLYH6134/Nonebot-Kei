@@ -87,7 +87,7 @@ async def _(event: Event, matcher: Matcher):
         await matcher.finish("今日运势生成出错……1")
 
     if not is_first:
-        msg = MessageFactory([Text("，你今天抽过签了ᕕ(◠ڼ◠)ᕗ再给你看一次哦\n"), Image(image_file)])
+        msg = MessageFactory([Text("，你今天抽过签了ᕕ(◠ڼ◠)ᕗ要不抽张塔罗牌吧？\n"), Image(image_file)])
     else:
         logger.info(f"User {uid} | Group {gid} 占卜了今日运势")
         msg = MessageFactory([Text("✨今日运势✨\n"), Image(image_file)])
@@ -115,7 +115,7 @@ async def _(matcher: Matcher, event: Event, user_themes: Annotated[str, RegexStr
 
                 if not is_first:
                     msg = MessageFactory(
-                        [Text("，你今天抽过签了ᕕ(◠ڼ◠)ᕗ再给你看一次哦\n"), Image(image_file)]
+                        [Text("，你今天抽过签了ᕕ(◠ڼ◠)ᕗ要不抽张塔罗牌吧？\n"), Image(image_file)]
                     )
                 else:
                     logger.info(f"User {uid} | Group {gid} 占卜了今日运势")
@@ -173,7 +173,7 @@ async def _(event: Event, limit: Annotated[str, Depends(get_user_arg)]):
                 await limit_setting.finish("今日运势生成出错……4")
 
     if not is_first:
-        msg = MessageFactory([Text("，你今天抽过签了ᕕ(◠ڼ◠)ᕗ再给你看一次哦\n"), Image(image_file)])
+        msg = MessageFactory([Text("，你今天抽过签了ᕕ(◠ڼ◠)ᕗ要不抽张塔罗牌吧？\n"), Image(image_file)])
     else:
         logger.info(f"User {uid} | Group {gid} 占卜了今日运势")
         msg = MessageFactory([Text("✨今日运势✨\n"), Image(image_file)])
