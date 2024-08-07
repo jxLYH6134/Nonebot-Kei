@@ -12,10 +12,11 @@ pip install --upgrade nonebot-plugin-fishing
 pip install --upgrade nonebot-plugin-learning-chat
 pip install --upgrade nonebot-plugin-memes
 pip install --upgrade nonebot-plugin-multincm
+pip install --upgrade nonebot-plugin-questionmark
 pip install --upgrade nonebot-plugin-treehelp
 pip install --upgrade nonebot-plugin-who-at-me
 pip install --upgrade nonebot-plugin-withdraw
-pip install --upgrade nonebot_plugin-questionmark
+pip install --upgrade nonebot-plugin-wordle
 
 pip install --upgrade nonebot-plugin-apscheduler
 pip install --upgrade nonebot-plugin-localstore
@@ -31,5 +32,6 @@ pip install --upgrade starlette
 pip install "numpy<2.0.0"
 pip install "pydantic<2.0.0"
 pip install "ruamel.yaml<0.18.0"
+pip uninstall pydantic_core
 pip list --outdated --trusted-host mirrors.cloud.aliyuncs.com
 pause
