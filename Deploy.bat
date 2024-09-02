@@ -19,6 +19,7 @@ pip install --upgrade nonebot-plugin-withdraw
 pip install --upgrade nonebot-plugin-wordle
 
 pip install --upgrade nonebot-plugin-apscheduler
+pip install --upgrade nonebot-plugin-datastore
 pip install --upgrade nonebot-plugin-localstore
 pip install --upgrade tortoise-orm
 
