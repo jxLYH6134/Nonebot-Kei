@@ -27,6 +27,7 @@ pip install --upgrade aiosqlite
 pip install --upgrade black
 pip install --upgrade expandvars
 pip install --upgrade iso8601
+pip install --upgrade pyee
 pip install --upgrade starlette
 
 pip install "numpy<2.0.0"
